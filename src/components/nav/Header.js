@@ -23,10 +23,17 @@ class Header extends React.Component
 						<Navbar.Brand href="/">OOXML</Navbar.Brand>
 						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 						<Navbar.Collapse id="responsive-navbar-nav">
-							<Nav className="mr-auto">		
+							<Nav className="mr-auto">
+								{/* HashRouter */}
+								{/* <Link class="nav-link" to="/">Home</Link> */}
+								{/* <Link class="nav-link" to="/docx_home">DOCX Home</Link> */}
+								{/* <Link class="nav-link" to="/pptx_home">PTTX Home</Link> */}
+								
+								{/* BrowserRouter */}
 								<Nav.Link href="/">Home</Nav.Link>
 								<Nav.Link href="/docx_home">DOCX Home</Nav.Link>
-								<Nav.Link href="/pptx_home">PTTX Home</Nav.Link>					
+								<Nav.Link href="/pptx_home">PTTX Home</Nav.Link>
+
 								{/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
 									<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
 									<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
