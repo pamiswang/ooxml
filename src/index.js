@@ -7,10 +7,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 // import { HashRouter as Router } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 
-
+//const basename = process.env.REACT_APP_BASENAME; // 可以設定在 .env 相關檔案
+const basename = ""; 
 
 ReactDOM.render(
-	<Router basename={process.env.PUBLIC_URL}>
+	<Router basename={basename}>
 		<App />
 	</Router>,
 	document.getElementById('root')
