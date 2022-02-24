@@ -1,5 +1,4 @@
 import React from 'react';
-import { Routes, Route, Link } from "react-router-dom";
 
 class Pptx_home extends React.Component
 {
@@ -10,10 +9,8 @@ class Pptx_home extends React.Component
 			
 				<main>
 					<h2>頁面  PPTX</h2>
-					<p>
-						That feels like an existential question, don't you
-						think?
-					</p>
+					<h1>PPTX {process.env.PUBLIC_URL}</h1>
+					<h1>PPTX {process.env.NODE_ENV}</h1>
 				</main>
 
 			</>

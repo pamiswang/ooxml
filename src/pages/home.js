@@ -1,5 +1,4 @@
 import React from 'react';
-import { Routes, Route, Link } from "react-router-dom";
 
 class Home extends React.Component
 {
@@ -7,10 +6,10 @@ class Home extends React.Component
 	{
 		return (
 			<>
-			
 				<main>
 					<h2>頁面  Home</h2>
-					<p>You can do this, I believe in you.</p>
+					<h1>{process.env.PUBLIC_URL}</h1>
+					<h1>{process.env.NODE_ENV}</h1>
 				</main>
 
 			</>

@@ -6,9 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 // import { HashRouter as Router } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap'
 
-//const basename = process.env.REACT_APP_BASENAME; // 可以設定在 .env 相關檔案
-const basename = ""; 
+let basename = "";
+
+if (process.env.NODE_ENV === 'development')
+{
+	basename = "";
+}
+else if (process.env.NODE_ENV === 'production')
+{
+	basename = process.env.PUBLIC_URL;
+}
 
 ReactDOM.render(
 	<Router basename={basename}>
