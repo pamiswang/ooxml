@@ -3,7 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "../../pages/home";
 import DocxHome from "../../pages/docx/docx_home"
 import PptxHome from "../../pages/pptx/pptx_home"
-import Test from "../../pages/test"
 
 class Header extends React.Component
 {
@@ -35,7 +34,7 @@ class Header extends React.Component
 								<NavLink isActive={false} to="/">Home</NavLink>
 								<NavLink isActive={false} to="/docx_home" >DOCX Home</NavLink>
 								<NavLink isActive={false} to="/pptx_home" >PTTX Home</NavLink>
-								<NavLink isActive={false} to="/test" >Tesst</NavLink>
+								{/* <NavLink isActive={false} to="/test" >Tesst</NavLink> */}
 							</ul>
 						</div>
 					</div>
@@ -45,7 +44,7 @@ class Header extends React.Component
 					<Route path="/" element={<Home />} />
 					<Route path="docx_home" element={<DocxHome />} />
 					<Route path="pptx_home" element={<PptxHome />} />
-					<Route path="Test" element={<Test />} />
+					{/* <Route path="Test" element={<Test />} /> */}
 				</Routes>
 			</div >
 		);
