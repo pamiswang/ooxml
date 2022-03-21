@@ -1,0 +1,12 @@
+.navbar {
+  background-image: linear-gradient(to bottom, #dcead0, #b9d4a3);
+}
+
+.nav-title {
+  color: #c13105;
+}
+
+.nav-text {
+  color: #466946;
+  font-weight: bolder;
+}

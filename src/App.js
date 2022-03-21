@@ -1,14 +1,18 @@
 import React from "react";
 import logo from './logo.svg';
 import './App.css';
-import Header from "./components/nav/Header";
-
+import TopNav from "./components/TopNav/TopNav";
+import TopNavRoutes from "./components/TopNav/TopNavRoutes";
 
 class App extends React.Component
 {
 	render()
-	{		return (
-			<Header />
+	{
+		return (
+			<div>
+				<TopNav />
+				<TopNavRoutes />
+			</div>
 		);
 	}
 }
