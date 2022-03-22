@@ -22,10 +22,15 @@ else if (process.env.NODE_ENV === 'production')
 	basename = process.env.PUBLIC_URL;
 }
 
+
+
+
+
+
 ReactDOM.render(
 
 	<Style />,
-	document.getElementById('use-style')
+	document.getElementById('style')
 );
 
 ReactDOM.render(
@@ -38,7 +43,7 @@ ReactDOM.render(
 ReactDOM.render(
 
 	<Script />,
-	document.getElementById('use-script')
+	document.getElementById('script')
 );
 
 // If you want to start measuring performance in your app, pass a function
