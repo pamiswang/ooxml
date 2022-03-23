@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import reportWebVitals from './reportWebVitals';
 import './index.css';
 //import App from './App';
-import Page from './components/AdminLTE/V3/Page';
-import Style from './components/AdminLTE/V3/Style';
-import Script from './components/AdminLTE/V3/Script';
-import reportWebVitals from './reportWebVitals';
+import Preloader from './components/AdminLTE/Preloader/Preloader';
+import Navbar from './components/AdminLTE/Navbar/Navbar';
+import Sidebar from './components/AdminLTE/Sidebar/Sidebar';
+
+import './components/AdminLTE/Style';
+import './components/AdminLTE/Script';
 import { BrowserRouter as Router } from "react-router-dom";
 // import { HashRouter as Router } from "react-router-dom";
 //import 'bootstrap/dist/css/bootstrap.css';
@@ -23,28 +26,24 @@ else if (process.env.NODE_ENV === 'production')
 }
 
 
-
-
-
-
-ReactDOM.render(
-
-	<Style />,
-	document.getElementById('style')
-);
+// ReactDOM.render(
+// 	<Router basename={basename}>
+// 		<Preloader />
+// 		<Page />
+// 	</Router>,
+// 	document.getElementById('root')
+// );
 
 ReactDOM.render(
-	<Router basename={basename}>
-		<Page />
-	</Router>,
+	<div className="wrapper" >
+		<Preloader />
+		<Navbar />
+		<Sidebar />
+	</div>,
 	document.getElementById('root')
 );
 
-ReactDOM.render(
 
-	<Script />,
-	document.getElementById('script')
-);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

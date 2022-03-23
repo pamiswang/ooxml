@@ -1,33 +1,28 @@
-# Getting Started with Create React App
+# 專案說明
+測試專案
+使用 AdminLTE3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 安裝Node.js
+必須版本：Node >= 14.0.0 and npm >= 5.6
+下載位址：https://nodejs.org/zh-tw/
 
-## Available Scripts
+## 下載專案
+Clone 或 Fork 該專案
 
-In the project directory, you can run:
+## 可用指令
+
+### `npm install`
+根據package.json 下載依賴對應版本的套件
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+在開發模式執行專案
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+執行測試
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+建置專案於 `build` 資料夾內
 
 ### `npm run eject`
 
