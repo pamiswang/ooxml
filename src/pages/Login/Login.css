@@ -1,0 +1,15 @@
+#loginContainer {
+	height: 800px;
+	min-height: 400px;
+  }
+  
+  #loginTitle{
+	color:  #c13105;
+  }
+
+  #loginForm {
+	background-color:whitesmoke;
+	max-width: 400px; 
+	min-width: 400px; 
+  }
+  

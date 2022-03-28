@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "../../pages/home";
 import PptxHome from "../../pages/pptx/pptx_home"
 import DocxHome from "../../pages/docx/docx_home"
-import Login from "../../pages/login"
+import Login from "../../pages/login/Login"
 
 class TopNavRoutes extends React.Component
 {
